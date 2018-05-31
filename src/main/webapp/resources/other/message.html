@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+            *{
+                font: 15px/1.4 Raleway, Verdana, Arial, Tahoma, sans-serif !important; 
+                box-sizing: border-box;
+            } 
+            html{
+                min-height: 400px;
+                border-radius: 10px;
+            }
+            body.scrollHide{
+                width: 100%;
+                min-height: 400px;
+                border-radius: 10px;
+                padding: 5px 10px;
+                margin: 0; 
+                word-wrap: break-word;
+            }
+            body.scrollHide::-webkit-scrollbar {
+                display: none; /* turn off scrollbar on Safari, Chrome */
+            }
+
+            body.scrollHide {
+                overflow: -moz-scrollbars-none; /* turn off scrollbar on FF */
+                -ms-overflow-style: none; /* turn off scrollbar on IE */
+            }
+        </style>
+    </head>
+    <body contenteditable="true" class="scrollHide">
+    </body>
+</html>

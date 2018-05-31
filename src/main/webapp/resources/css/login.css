@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 17px/1 Raleway, Verdana, Arial, Tahoma, sans-serif; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 1px #ffffff solid;*/
+}
+
+/**************************************************/
+/*********** Style for the login panel ************/
+/**************************************************/
+
+html{
+    background-image: -webkit-linear-gradient(45deg, #ffffff -20%, #133863 65%);
+    background-repeat: no-repeat;
+    height: 100%;
+    min-width: 315px;
+    overflow: auto;
+}
+.btn-header{
+    height: 60px;
+}
+.btn-register{
+    display: inline-block;
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+.btn-register:hover{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 19px 33px
+}
+#logo{
+    display: none;
+    color: #fff;
+}
+.first-line{
+    margin-top: 50px;
+}
+.first-line span{
+    font-size: 40px;
+}
+.first-line span:first-child{
+    font-size: 55px;
+    font-weight: bold;
+}
+.second-line{
+    margin-top: 20px;
+}
+.second-line span{
+    font-size: 40px;
+}
+.second-line span.big-letter{
+    font-size: 108px;
+    font-weight: bold;
+}
+.wave-effect span{
+    opacity: 0;
+    animation: loading 4.5s linear 2 alternate-reverse;
+    animation-fill-mode: forwards;
+}
+@keyframes loading {
+    to{opacity: 1;}
+}
+.wave-effect span:nth-child(1){
+    animation-delay: 0.25s;
+}
+.wave-effect span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.wave-effect span:nth-child(3) {
+    animation-delay: 0.75s;
+}
+.wave-effect span:nth-child(4) {
+    animation-delay: 1s;
+}
+.wave-effect span:nth-child(5) {
+    animation-delay: 1.25s;
+}
+.wave-effect span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+.wave-effect span:nth-child(7) {
+    animation-delay: 1.75s;
+}
+.wave-effect span:nth-child(8) {
+    animation-delay: 2s;
+}
+.wave-effect span:nth-child(9) {
+    animation-delay: 2.25s;
+}
+.wave-effect span:nth-child(10) {
+    animation-delay: 2.5s;
+}
+.wave-effect span:nth-child(11) {
+    animation-delay: 2.75s;
+}
+.wave-effect span:nth-child(12) {
+    animation-delay: 3s;
+}
+.wave-effect span:nth-child(13) {
+    animation-delay: 3.25s;
+}
+.wave-effect span:nth-child(14) {
+    animation-delay: 3.5s;
+}
+.wave-effect span:nth-child(15) {
+    animation-delay: 3.75s;
+}
+.wave-effect span:nth-child(16) {
+    animation-delay: 4s;
+}
+.wave-effect span:nth-child(17) {
+    animation-delay: 4.25s;
+}
+.wave-effect span:nth-child(18) {
+    animation-delay: 4.5s;
+}
+.panel-logowania{
+    width: 100%;
+}
+.panel-title{
+    padding: 15px 0;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #091D34;
+    border: 1px #000 solid;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    margin-bottom: 10px;
+}
+.panel-body{
+    overflow: auto;
+}
+.input-group{
+    margin-top: 15px;
+}
+.merge{
+    position: relative;
+    height: 40px;
+    border: 1px #133863 solid;        
+}
+.merge i{
+    float: left;
+    width: 12%;
+    height: 100%;
+    padding: 8px 0;
+    color: white;
+    font-size: 21px; 
+    text-align: center;
+    background-color: #133863;
+    outline: none;
+    border: none;
+}
+.merge input{
+    width: 88%;
+    height: 100%;
+    padding: 0px 15px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+.input-group input:hover, .input-group input:focus{
+    background-color: #E1ECF9;
+}
+.input-group button{
+    float: right;
+    width: 24%;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: #133863;
+    outline: none;
+    border: none;
+}
+.input-group button:hover{
+    color: #133863;
+    background-color: white;
+    border: 1px #133863 solid;
+    cursor: pointer;
+}
+.panel-footer{
+    position: relative;
+    height: 40px;
+    text-align: center;
+    padding: 12px 0 0 0;
+    /*border-top: 1px #000 solid;*/
+}
+.panel-footer a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.panel-footer:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (min-width: 540px){
+    .panel-logowania{width: 400px; margin-left: 33px;}
+}
+@media screen and (min-width: 720px){
+    #logo{height: 250px; display: block;}
+    .panel-logowania{margin-left: 66px;}
+    .panel-title{display: none;}
+}
+@media screen and (min-width: 960px){
+    #logo{height: 300px;}
+    .first-line{margin-top: 75px;}
+    .panel-logowania{margin-left: 100px;}    
+}
+@media screen and (min-width: 1160px){
+    #logo{height: 325px;}
+    .first-line{margin-top: 100px;}
+    .panel-logowania{margin-left: 150px;} 
+}
+@media screen and (min-width: 1460px){
+    #logo{height: 425px;}
+    .first-line{margin-top: 160px;}
+    .panel-logowania{margin-left: 200px;} 
+}
+
+/**************************************************/
+/********** Style for the register info box *******/
+/**************************************************/
+#infoBox{
+    position: relative;
+    height: 125px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#boxSuccess{
+    position: relative;
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-color: #133863;
+}
+#boxError{
+    position: relative;
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-color: #133863;
+    background-color: #E1ECF9;
+}
+#boxError .error-details{
+    width: 100%;
+    height: 95px;
+    white-space: normal;
+    overflow: auto;
+}
+#boxError .error-details::-webkit-scrollbar {
+    display: none;  /*turn off scrollbar on Safari, Chrome */
+}
+#boxError .error-details{
+    overflow: -moz-scrollbars-none;  /*turn off scrollbar on FF */
+    -ms-overflow-style: none;  /*turn off scrollbar on IE */
+}
+#boxSuccess.show{
+    display: block;
+}
+#boxError.show{
+    display: block;
+}
+#boxError .btn-close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -11px;
+    right: -11px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+    background-color: #133863;
+    border: 1px #000 solid;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+#boxError .btn-close:hover{
+    color: #133863;
+    border: 1px #133863 solid;
+    background-color: white;
+}
+#boxError p{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+#boxError ul{
+    padding: 0 0 0 20px;
+    list-style-type: square;
+}
+#boxError ul li{
+    font-size: 14px;
+}
+#verticalLineLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 25px;
+    height: 100%;
+    background-color: #133863;
+    border: none;
+    outline: none;
+}
+#message{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: #E1ECF9;
+    border: none;
+    outline: none;
+    padding: 20px 0 0 40px;
+}
+#message p:first-child{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#message p:not([class^='welcome']){
+    margin-top: 5px;
+}
+#message p span{
+    font-weight: bold;
+}
+#verticalLineRight{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 1;
+    display: inline-block;
+    width: 25px;
+    height: 100%;
+    background-color: #133863;
+    border: none;
+    outline: none;
+    padding-top: 52px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+#verticalLineRight:hover{
+    font-size: 17px;
+    width: 30px;
+    font-weight: bold;
+    padding-top: 51px;
+}
+/*animation*/
+#boxSuccess.show.reduce-size{
+    opacity: 0;
+    width: 25px;
+    transition-duration: 1s;
+}
+#boxSuccess.show.reduce-size #message p{
+    opacity: 0;
+    transition: 0.4s;
+}
+@media screen and (min-width: 540px){
+    #infoBox{width: 400px; margin-left: 33px}
+}
+@media screen and (min-width: 720px){
+    #infoBox{margin: 0 0 0 66px;}
+}
+@media screen and (min-width: 960px){  
+    #infoBox{margin-left: 100px}
+}
+@media screen and (min-width: 1160px){
+    #infoBox{margin-left: 150px}
+}
+@media screen and (min-width: 1460px){
+    #infoBox{margin-left: 200px} 
+}
+/**************************************************/
+/********** Style for the modal register panel ****/
+/**************************************************/
+#registerForm{
+    margin: 0 auto;
+}
+.tab{
+    display: none;
+}
+h1{
+    text-align: center;  
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px 10px;
+}
+.form-label{
+    padding: 10px;
+}
+.form-group{
+    margin-top: 20px;
+}
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+.form-control.invalid {
+    background-color: #ffdddd;
+}
+span.invalid{
+    color: red;
+    padding: 4px 10px;
+}
+.additional-space{
+    margin-bottom: 10px;
+}
+.info-password{
+    font-size: 12px;
+    font-weight: normal;
+    text-align: right;
+    padding: 4px 10px;
+}
+.info-password i{
+    font-size: 12px;
+}
+.correct-value{
+    font-weight: bold;
+    color: green;
+}
+.incorrect-value{
+    font-weight: bold;
+    color: red;
+}
+.navigation-btn{
+    float: right;
+    padding: 15px 10px;;
+}
+.navigation-btn button{
+    background-color: #4CAF50;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#prevBtn{
+    background-color: #bbb;
+}
+.navigation-btn button:hover {
+    opacity: 0.8;
+}
+.step-indicator{
+    padding: 25px 10px;
+}
+.step{
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border: none;  
+    border-radius: 50%;
+    margin: 0 2px;
+    display: inline-block;
+    opacity: 0.5;
+}
+.step.active {
+    opacity: 1;
+}
+.step.finish {
+    background-color: #4CAF50;
+}
+.modal{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    margin: auto;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4), 0 0 30px 0 rgba(0,0,0,0.6);
+}
+.modal-header{
+    padding: 5px 10px;
+    border-bottom: 1px #b2b2b2 solid;
+}
+.modal-body{
+    min-height: 490px;
+}
+.modal-footer{
+    border-top: 1px #b2b2b2 solid;
+}
+.close{
+    color: #000;
+    float: right;
+    font-size: 40px;
+    margin-top: -9px;
+    font-weight: bold;
+}
+.close:hover{
+    color: #000;
+    font-size: 55px;
+    margin-top: -18px;
+    margin-right: -4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (min-width: 540px){
+    .modal-content{margin-top: 25px;}
+}
+@media screen and (min-width: 720px){
+    .modal-content{margin-top: 50px;}
+}
+@media screen and (min-width: 960px){
+    .modal-content{margin-top: 75px; width: 80%;}
+}
+@media screen and (min-width: 1160px){
+    .modal-content{margin-top: 100px; width: 70%;}
+}
+@media screen and (min-width: 1460px){
+    .modal-content{margin-top: 125px; width: 60%;}
+}

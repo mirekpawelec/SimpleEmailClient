@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 15px/1 Raleway, Verdana, Arial, Tahoma, sans-serif; 
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    /*border: 1px #000 solid;*/
+}
+
+body{
+    min-width: 305px;
+}
+
+#mainBox{
+    padding: 100px 0;
+}
+
+/*************************************************************
+Alert class goes here ****************************************
+*************************************************************/
+.alert{
+    padding: 20px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+.alert.success {background-color: #4CAF50;}
+.alert.error {background-color: #f44336;}
+.alert-close {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.alert-close:hover {
+    color: black;
+}
+/*************************************************************
+Actionbar class goes here ************************************
+*************************************************************/
+
+.actionBar{
+    padding-bottom: 20px;
+}
+.actionBar a{
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    font-variant: small-caps;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #133863;
+    padding: 5px 10px 7px 10px;
+    border: 2px #133863 solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.actionBar a:hover{
+    color: #000 !important;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+/*************************************************************
+Table with contact class goes here ***************************
+*************************************************************/
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th, td {
+    height: 30px;
+    text-align: left;
+    padding: 4px 8px;
+}
+th{
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    font-variant: small-caps;
+    background-color: #133863;
+}
+td{
+    color: #000;
+    font-size: 14px;
+}
+tbody tr{
+    border-bottom: 1px #000 solid;
+}
+tbody tr:hover{
+    background-color: #e6e6e6;
+}
+.table{
+    overflow-x: auto;
+}
+.table-button{
+    width: 65px;
+    border: 2px #000 solid;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+.danger {
+    border-color: #f44336;
+    color: red
+}
+.danger:hover {
+    background: #f44336;
+    color: white;
+}
+.default {
+    border-color: #133863;
+    color: #000;
+}
+.default:hover {
+    background-color: #133863;
+    color: #fff;
+}
+
+/*************************************************************
+Modal box contact class goes here ****************************
+*************************************************************/
+
+.modal{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    padding-top: 16%;
+}
+.modalBoxContact{
+    position: relative;
+    /*overflow: auto;*/
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4), 0 0 30px 0 rgba(0,0,0,0.6);
+}
+.modalBoxContact{
+    position: relative;
+    padding: 20px;
+    border: 1px #000 solid;
+}
+.modalBoxContactHeader{
+    padding: 15px 0;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 35px;
+    color: #000;
+    font-size: 45px;
+    text-align: center;
+    line-height: 32px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+.close:hover{
+    font-size: 60px;
+    line-height: 30px;
+}
+.modalBoxContactHeader p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.form-group{
+    padding: 15px 0;
+    overflow: hidden;
+}
+.form-group label{
+    line-height: 30px;
+}
+.form-group input[type='text'],
+.form-group select{
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+}
+.form-group input[type='text']:hover{
+    border: 2px #999999 solid;
+}
+.form-group select:hover{
+    border: 2px #999999 solid;
+    padding: 4px 9px;
+}
+.form-group input[type='submit']{
+    float: right;
+}
+.form-group input[type='text'].invalid,
+.form-group select.invalid {
+    background-color: #ffdddd;
+}
+.form-group input[type='text'] + div span,
+.form-group select + div span{
+    display: block;
+}
+.form-group span.invalid{
+    color: red;
+    padding: 4px 10px;
+}
+.form-btn{
+    width: 150px;
+    border: 2px #091D34 solid;
+    padding: 0 5px;
+    color: white;
+    font-size: 15px;
+    font-variant: small-caps; 
+    line-height: 28px;
+    background-color: #133863;
+    cursor: pointer;
+}
+.form-btn:hover{
+    border: 2px #091D34 solid;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+@media screen and (max-width: 720px){
+    .modal{padding-top: 75px}
+}
