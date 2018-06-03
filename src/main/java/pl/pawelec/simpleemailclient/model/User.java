@@ -25,6 +25,7 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import pl.pawelec.simpleemailclient.converter.LocalDateTimeToDateTimeConverter;
+import pl.pawelec.simpleemailclient.utils.Encryption;
 
 /**
  *
@@ -78,14 +79,14 @@ public class User implements Serializable{
     public User(String login, String password, String fullName) {
         this();
         this.login = login;
-        this.password = password;
+        this.password = Encryption.encodeMd5(password);
         this.fullName = fullName;
     }
 
     public User(String login, String password, String fullName, String sessionId, Long expirationDate) {
         this();
         this.login = login;
-        this.password = password;
+        this.password = Encryption.encodeMd5(password);
         this.fullName = fullName;
         this.sessionId = sessionId;
         this.expirationDate = expirationDate;
@@ -110,7 +111,7 @@ public class User implements Serializable{
         return password;
     }
     public void setPassword(String password) {
-        this.password = password;
+        this.password = Encryption.encodeMd5(password);
     }
 
     public String getFullName() {

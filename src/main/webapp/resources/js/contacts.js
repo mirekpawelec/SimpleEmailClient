@@ -32,6 +32,11 @@
                 displayModalWindow();
             };
         });
+        window.onclick = function(e){
+            if(e.target===modal){
+                closeModalWindow();
+            }
+        };
     }
     
     function fillForm(){
@@ -133,12 +138,6 @@
                 });
             }
         });
-    }
-    
-    window.onclick = function(e){
-        if(e.target===modal){
-            closeModalWindow();
-        }
     };
 
     function displayModalWindow(){
@@ -160,7 +159,7 @@
                 field.value = "";
             });
         }
-    }
+    };
     
     assignEventsToButtons();
 })();

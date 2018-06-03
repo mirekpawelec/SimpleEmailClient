@@ -28,7 +28,7 @@ public class Contacts extends HttpServlet{
     private static final String SUCCESS_CREATE = "Kontakt został dodany.";
     private static final String SUCCESS_UPDATE = "Kontakt został zmodyfikowany.";
     private static final String SUCCESS_DELETE = "Kontakt \"%s\" został usunięty.";
-    private static final String CREATE_UPDATE_ERROR = "Wystąpił błąd. Nie udało się dodać/zmodyfikować kontaktu.";
+    private static final String CREATE_OR_UPDATE_ERROR = "Wystąpił błąd. Nie udało się dodać/zmodyfikować kontaktu.";
     private static final String VALIDATION_ERROR = "Nieprawidłowy format danych. Nie udało się dodać/zmodyfikować kontaktu.";
     private static final String DELETE_ERROR = "Nie udało się usunąć kontaktu \"%s\".";
     @Inject @ContactServiceQualifier
@@ -80,7 +80,7 @@ public class Contacts extends HttpServlet{
                         req.setAttribute("success", SUCCESS_UPDATE);
                     }
                 }catch(Exception e){
-                    req.setAttribute("error", CREATE_UPDATE_ERROR);
+                    req.setAttribute("error", CREATE_OR_UPDATE_ERROR);
                 }
             }else{
                 req.setAttribute("error", VALIDATION_ERROR);

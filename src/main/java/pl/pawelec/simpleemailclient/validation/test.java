@@ -27,6 +27,7 @@ import pl.pawelec.simpleemailclient.qualifier.EmailServiceQualifier;
 import pl.pawelec.simpleemailclient.service.EmailService;
 import pl.pawelec.simpleemailclient.service.UserService;
 import pl.pawelec.simpleemailclient.service.impl.UserServiceImpl;
+import pl.pawelec.simpleemailclient.utils.Encryption;
 
 /**
  *
@@ -67,8 +68,8 @@ public class test {
 //                .build()
 //        );
 //        System.out.println("  Antoni <antoni@wp.pl>  ".trim());
-        System.out.println("  <example-mail@wp.pl>".trim()
-                .matches("^(([^<>\\[\\]@]+<(\\w+[+.-]{1}){0,}\\w+@(\\w+[.-]{1}){0,}\\w+\\.\\w{2,}>)|((\\w+[+.-]{1}){0,}\\w+@(\\w+[.-]{1}){0,}\\w+\\.\\w{2,}))$"));
+//        System.out.println("  <example-mail@wp.pl>".trim()
+//                .matches("^(([^<>\\[\\]@]+<(\\w+[+.-]{1}){0,}\\w+@(\\w+[.-]{1}){0,}\\w+\\.\\w{2,}>)|((\\w+[+.-]{1}){0,}\\w+@(\\w+[.-]{1}){0,}\\w+\\.\\w{2,}))$"));
         
 //        System.out.println("jarek@wp.pl brozka@wp.pl".matches("^(([(\\w+[+.-]){0,2}\\w+][^@])@(\\w+[.-]{1}){0,2}\\w+\\.\\w{2,4};? ?)+$"));
         
@@ -76,8 +77,10 @@ public class test {
 
 //        System.out.println( LocalDateTime.of(2018, 5, 20, 8, 0).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli() );
 
-        EmailDaoImpl e = new EmailDaoImpl();
-        System.out.println(e.count(16l, "RECEIVED"));
+//        EmailDaoImpl e = new EmailDaoImpl();
+//        System.out.println(e.count(16l, "RECEIVED"));
+        
+        System.out.println( Encryption.encodeMd5("Dupa1212") );
         
     }
 }

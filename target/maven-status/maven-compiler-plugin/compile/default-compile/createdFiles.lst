@@ -57,7 +57,6 @@ pl\pawelec\simpleemailclient\model\dao\impl\EmailAccountDaoImpl.class
 pl\pawelec\simpleemailclient\model\dao\impl\EmailDaoImpl.class
 pl\pawelec\simpleemailclient\model\RedirectAttribute.class
 pl\pawelec\simpleemailclient\model\enum_\RecipientType.class
-pl\pawelec\simpleemailclient\controller\servlet\Welcome.class
 pl\pawelec\simpleemailclient\utils\MailUtils.class
 pl\pawelec\simpleemailclient\model\enum_\SendEmailForm.class
 pl\pawelec\simpleemailclient\exception\ReadStatusNoChangeException.class

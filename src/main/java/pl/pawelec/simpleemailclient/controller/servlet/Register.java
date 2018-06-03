@@ -7,9 +7,7 @@ package pl.pawelec.simpleemailclient.controller.servlet;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import javax.inject.Inject;
@@ -19,7 +17,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.jboss.resteasy.util.Base64;
 import pl.pawelec.simpleemailclient.model.EmailAccount;
 import pl.pawelec.simpleemailclient.model.RedirectAttribute;
 import pl.pawelec.simpleemailclient.model.Role;
@@ -33,7 +30,6 @@ import pl.pawelec.simpleemailclient.service.EmailAccountService;
 import pl.pawelec.simpleemailclient.service.RoleService;
 import pl.pawelec.simpleemailclient.service.UserRoleService;
 import pl.pawelec.simpleemailclient.service.UserService;
-import pl.pawelec.simpleemailclient.utils.Encryption;
 
 /**
  *

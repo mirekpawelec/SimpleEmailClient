@@ -1,7 +1,155 @@
-/*******************************************************************************
-Menu class goes here ***********************************************************
-*******************************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    font: 15px/1 Raleway, Verdana, Arial, Tahoma, sans-serif; 
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    /*border: 1px #000 solid;*/
+}
 
+body{
+    min-width: 305px;
+}
+
+/*******************************************************************************
+Navigation buttons class goes here *********************************************
+*******************************************************************************/
 .menu{
     padding-top: 100px;
+}
+.btn-groups button{
+    display: inline-block;
+    float: left;
+    width: 150px;
+    border: 1px #000 solid;
+    background-color: #fff;
+    color: black;
+    padding: 7px 10px;
+    cursor: pointer;
+    outline: none;
+}
+.btn-groups button:not(:last-child) {
+    border-right: none;
+}
+.default {
+    border-color: #133863;
+    color: #000;
+}
+.default:hover {
+    background-color: #133863;
+    color: #fff;
+}
+
+/*************************************************************
+Alert class goes here ****************************************
+*************************************************************/
+.alert{
+    padding: 20px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin: 25px 0;
+}
+.alert.success {background-color: #4CAF50;}
+.alert.error {background-color: #f44336;}
+.alert-close {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.alert-close:hover {
+    color: black;
+}
+
+/*******************************************************************************
+MyDataForm class goes here *****************************************************
+*******************************************************************************/
+#myDataPanel{
+    padding-top: 25px;
+}
+.login{
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-group{
+    padding: 15px 0;
+    overflow: hidden;
+}
+.form-group label{
+    line-height: 30px;
+}
+.form-group input[type='text'],
+.form-group input[type='password']{
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+}
+.form-group input[type='text']:hover,
+.form-group input[type='password']:hover{
+    border: 2px #999999 solid;
+}
+.form-group input[type='submit']{
+    float: right;
+}
+.form-group input[type='text'].invalid,
+.form-group input[type='password'].invalid {
+    background-color: #ffdddd;
+}
+.form-group input[type='text'] + div span,
+.form-group input[type='password'] + div span{
+    display: block;
+}
+.form-group span.invalid{
+    color: red;
+    padding: 4px 10px;
+}
+.info-password{
+    font-size: 12px;
+    font-weight: normal;
+    text-align: right;
+    padding: 4px 10px;
+}
+.info-password i{
+    font-size: 12px;
+}
+.correct-value{
+    font-weight: bold;
+    color: green;
+}
+.incorrect-value{
+    font-weight: bold;
+    color: red;
+}
+.form-btn{
+    width: 150px;
+    border: 2px #091D34 solid;
+    padding: 0 5px;
+    color: white;
+    font-size: 15px;
+    font-variant: small-caps; 
+    line-height: 28px;
+    background-color: #133863;
+    cursor: pointer;
+}
+.form-btn:hover{
+    border: 2px #091D34 solid;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/*******************************************************************************
+Filters class goes here ********************************************************
+*******************************************************************************/
+#filtersPanel{
+    padding-top: 25px;
 }

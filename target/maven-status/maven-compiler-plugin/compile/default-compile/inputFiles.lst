@@ -103,7 +103,7 @@ C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\paw
 C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\utils\Encryption.java
 C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\service\impl\EmailInternetAddressServiceImpl.java
 C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\qualifier\EmailAccountDaoQualifier.java
-C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\controller\servlet\Welcome.java
+C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\controller\servlet\myAccount.java
 C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\validation\VerifyEmailPattern.java
 C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\model\dao\ContactDao.java
 C:\Users\mirek\Documents\NetBeansProjects\SimpleEmailClient\src\main\java\pl\pawelec\simpleemailclient\model\dao\RoleDao.java

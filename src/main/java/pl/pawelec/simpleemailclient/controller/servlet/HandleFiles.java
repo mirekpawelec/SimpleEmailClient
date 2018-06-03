@@ -64,5 +64,4 @@ public class HandleFiles extends HttpServlet{
         doGet(req, resp);
     }
     
-    
 }

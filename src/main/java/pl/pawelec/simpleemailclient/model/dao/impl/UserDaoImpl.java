@@ -30,8 +30,6 @@ public class UserDaoImpl implements UserDao{
     private Transaction transaction = null;
     
     public User create(User entity) {
-        String encrypedPassword = Encryption.encodeMd5(entity.getPassword());
-        entity.setPassword(encrypedPassword);
         session = HibernateUtil.getSessionFactory().openSession();
         transaction = session.getTransaction();
         try{

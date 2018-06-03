@@ -132,6 +132,5 @@ public class EmailInternetAddress implements Serializable{
                 + ", createDate=" + createDate 
                 + '}';
     }
-    
-    
+      
 }

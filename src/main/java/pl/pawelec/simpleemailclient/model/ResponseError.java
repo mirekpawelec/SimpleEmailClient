@@ -36,6 +36,5 @@ public class ResponseError {
     public String toString() {
         return "ResponseError{" + "code=" + code + ", message=" + message + '}';
     }
-    
-    
+     
 }

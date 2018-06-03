@@ -11,7 +11,7 @@
     <div class="row header-elements">
         <div id="logo" class="col-4xs col-3s col-2m">
             <ul>
-                <li><a class="logo animation-hover" href="<c:url value="/"/>">SCM</a></li>
+                <li><a class="logo animation-hover" href="<c:url value="/"/>">SEC</a></li>
             </ul>
         </div>
         <div id="menuUser" class="col-8xs col-6s col-5m col-4l">
