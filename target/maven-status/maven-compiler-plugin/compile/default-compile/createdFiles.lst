@@ -21,6 +21,7 @@ pl\pawelec\simpleemailclient\filter\UserLogged.class
 pl\pawelec\simpleemailclient\exception\FileNoFoundException.class
 pl\pawelec\simpleemailclient\model\dao\EmailInternetAddressDao.class
 pl\pawelec\simpleemailclient\controller\servlet\Login.class
+pl\pawelec\simpleemailclient\controller\servlet\myAccount.class
 pl\pawelec\simpleemailclient\service\UserService.class
 pl\pawelec\simpleemailclient\model\enum_\Status.class
 pl\pawelec\simpleemailclient\model\create\CreateInternetAddress.class
@@ -54,6 +55,7 @@ pl\pawelec\simpleemailclient\qualifier\EmailInternetAddressServiceQualifier.clas
 pl\pawelec\simpleemailclient\validation\VerifyStatusValidation.class
 pl\pawelec\simpleemailclient\model\User.class
 pl\pawelec\simpleemailclient\model\dao\impl\EmailAccountDaoImpl.class
+pl\pawelec\simpleemailclient\controller\servlet\Contacts.class
 pl\pawelec\simpleemailclient\model\dao\impl\EmailDaoImpl.class
 pl\pawelec\simpleemailclient\model\RedirectAttribute.class
 pl\pawelec\simpleemailclient\model\enum_\RecipientType.class
@@ -77,7 +79,6 @@ pl\pawelec\simpleemailclient\qualifier\ProductServiceQualifier.class
 pl\pawelec\simpleemailclient\controller\servlet\Logout.class
 pl\pawelec\simpleemailclient\configuration\RootConfig.class
 pl\pawelec\simpleemailclient\model\ResponseError.class
-pl\pawelec\simpleemailclient\validation\test.class
 pl\pawelec\simpleemailclient\qualifier\RoleServiceQualifier.class
 pl\pawelec\simpleemailclient\service\ContactService.class
 pl\pawelec\simpleemailclient\model\dao\impl\RoleDaoImpl.class
@@ -98,6 +99,7 @@ pl\pawelec\simpleemailclient\model\Email$Builder.class
 pl\pawelec\simpleemailclient\qualifier\EmailDaoQualifier.class
 pl\pawelec\simpleemailclient\model\enum_\DefaultHtmlAttachmentName.class
 pl\pawelec\simpleemailclient\model\enum_\PathToFile.class
+pl\pawelec\simpleemailclient\model\enum_\ContactStatus.class
 pl\pawelec\simpleemailclient\utils\EmailMultipartFormDataMessageBodyReader.class
 pl\pawelec\simpleemailclient\utils\Encryption.class
 pl\pawelec\simpleemailclient\listener\DBManager.class

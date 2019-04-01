@@ -51,8 +51,6 @@ import pl.pawelec.simpleemailclient.utils.Encryption;
  */
 @EmailServiceQualifier
 public class EmailServiceImpl implements Serializable, EmailService{
-    private static final String EMAIL_ADDRESS = "java.email@wp.pl";
-    private static final String EMAIL_PASSWORD = "Java8888";
     private static final String ERROR_INFO_FLAG = "The change of the flag failed!";
     private static final String ERROR_INFO_READ_STATUS = "The change of the read status failed!";
     
